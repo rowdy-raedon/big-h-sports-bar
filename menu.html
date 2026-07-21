@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu · Big H Sports Bar &amp; Grill · Marion, IN</title>
+<meta name="description" content="The menu at Big H Sports Bar &amp; Grill, 3022 S Washington St, Marion IN. Dogs, sandwiches, baskets, tavern-cut pizza, salads and tacos.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;background:var(--bg)}
+  .hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.3) saturate(1.1)}
+  .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,7,4,.3),rgba(10,7,4,.9));pointer-events:none}
+  .hero .inner{
+    position:relative;max-width:1040px;margin:0 auto;padding:72px 32px 60px;
+    text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;
+  }
+  .hero h1{font-family:Graduate,serif;font-size:56px;margin:0;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.6);line-height:1.1}
+  .hero h1 em{color:var(--orange);font-style:normal;text-shadow:0 0 26px rgba(232,129,58,.7)}
+  .hero .sub{
+    font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:17px;
+    letter-spacing:2px;color:var(--dim);text-transform:uppercase;
+  }
+
+  /* ---------- menu ---------- */
+  .menu{background:var(--bg);padding:64px 32px 24px}
+  .menu-inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+  .course{display:flex;flex-direction:column;gap:22px}
+  .course h2{font-family:Graduate,serif;font-size:28px;color:var(--orange);margin:0;text-shadow:0 0 18px rgba(232,129,58,.4)}
+  .items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px}
+  .item{
+    display:flex;gap:16px;align-items:stretch;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;padding:12px;min-height:120px;
+    transition:border-color .15s ease,transform .15s ease;
+  }
+  .item:hover{border-color:var(--orange-hot);transform:translateY(-2px)}
+  .item .shot{width:130px;flex:none}
+  .item .shot img{width:130px;height:100%;min-height:104px;max-height:150px;object-fit:cover;border-radius:10px;display:block;background:#000}
+  .item .body{flex:1;display:flex;flex-direction:column;gap:4px;justify-content:center;min-width:0}
+  .item .row{display:flex;align-items:baseline;gap:10px}
+  .item .name{font-family:Graduate,serif;font-size:17px;color:#fff}
+  .item .dots{flex:1;border-bottom:2px dotted #4a382a;transform:translateY(-3px)}
+  .item .price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:var(--orange)}
+  .item .desc{font-size:14.5px;color:var(--muted);line-height:1.45}
+
+  /* ---------- order bar ---------- */
+  .order{background:var(--orange-hot);padding:36px 32px;margin-top:40px}
+  .order-inner{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .order h3{font-family:Graduate,serif;font-size:26px;color:#fff;margin:0}
+  .order p{
+    margin:2px 0 0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:17px;
+    letter-spacing:2px;color:#3d2408;text-transform:uppercase;
+  }
+  .order a{
+    background:var(--bg);color:#fff;padding:15px 34px;border-radius:10px;
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;letter-spacing:2px;
+    transition:background .15s ease;
+  }
+  .order a:hover{background:#000}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:860px){
+    .items{grid-template-columns:1fr}
+    .hero h1{font-size:40px}
+    .hero .inner{padding:52px 20px 44px}
+    .menu{padding:44px 16px 16px}
+    .order{padding:28px 18px}
+    .order-inner{justify-content:center;text-align:center}
+  }
+  @media (max-width:420px){
+    .item{flex-direction:column}
+    .item .shot,.item .shot img{width:100%}
+    .item .shot img{height:170px;max-height:none}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="index.html">
+    <img src="images/logo.jpg" alt="Big H Sports Bar logo">
+    <span>BIG H <em>SPORTS BAR</em></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a class="active" href="menu.html">Menu</a>
+    <a href="events.html">Events</a>
+    <a href="index.html#visit">Visit</a>
+    <a class="btn" href="https://www.facebook.com/YeaklesSportsBar" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="images/618081150_1356883852912533_8911933077165680452_n.jpg" alt="">
+  <div class="scrim"></div>
+  <div class="inner">
+    <div class="eyebrow">Harold's Kitchen · Made to order</div>
+    <h1>THE <em>MENU</em></h1>
+    <div class="sub">Every dish below is the real thing — shot at our kitchen</div>
+  </div>
+</header>
+
+<section class="menu">
+  <div class="menu-inner">
+
+    <div class="course">
+      <div class="section-head"><h2>DOGS &amp; SANDWICHES</h2><span class="rule"></span></div>
+      <div class="items">
+        <div class="item">
+          <div class="shot"><img src="images/486017260_1113565257244395_3023467080145777486_n.jpg" alt="The Maxwell Polish Dog"></div>
+          <div class="body">
+            <div class="row"><span class="name">The Maxwell Polish Dog</span><span class="dots"></span><span class="price">$9</span></div>
+            <span class="desc">The house favorite — grilled polish, ketchup &amp; mustard, with fries and cheese sauce.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="shot"><img src="images/486443839_1113563773911210_551897223211309921_n.jpg" alt="Loaded Dog"></div>
+          <div class="body">
+            <div class="row"><span class="name">Loaded Dog</span><span class="dots"></span><span class="price">$10</span></div>
+            <span class="desc">Grilled onions, giardiniera, melted cheese, crinkle fries.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="shot"><img src="images/486385863_1113547133912874_9218972512642356406_n.jpg" alt="Philly Cheesesteak"></div>
+          <div class="body">
+            <div class="row"><span class="name">Philly Cheesesteak</span><span class="dots"></span><span class="price">$12</span></div>
+            <span class="desc">Shaved beef, melted cheese, hot peppers on the side, crinkle fries.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course">
+      <div class="section-head"><h2>BASKETS</h2><span class="rule"></span></div>
+      <div class="items">
+        <div class="item">
+          <div class="shot"><img src="images/513906503_1186588083275445_2178540251795420708_n.jpg" alt="Fish Basket"></div>
+          <div class="body">
+            <div class="row"><span class="name">Fish Basket</span><span class="dots"></span><span class="price">$11</span></div>
+            <span class="desc">Hand-breaded fillets, coleslaw, Texas toast, seasoned fries.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="shot"><img src="images/placeholder-fish-mushroom.jpg" alt="Fish &amp; Mushroom Basket"></div>
+          <div class="body">
+            <div class="row"><span class="name">Fish &amp; Mushroom Basket</span><span class="dots"></span><span class="price">$10</span></div>
+            <span class="desc">Fried fish and breaded mushrooms with tartar and ranch.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course">
+      <div class="section-head"><h2>PIZZA</h2><span class="rule"></span></div>
+      <div class="items">
+        <div class="item">
+          <div class="shot"><img src="images/618081150_1356883852912533_8911933077165680452_n.jpg" alt="Big H Supreme pizza"></div>
+          <div class="body">
+            <div class="row"><span class="name">Big H Supreme</span><span class="dots"></span><span class="price">$16</span></div>
+            <span class="desc">Thin-crust, tavern cut — sausage, mushroom, pepper, onion.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="shot"><img src="images/placeholder-buffalo-pizza.jpg" alt="Buffalo Chicken Pizza"></div>
+          <div class="body">
+            <div class="row"><span class="name">Buffalo Chicken Pizza</span><span class="dots"></span><span class="price">$15</span></div>
+            <span class="desc">Buffalo chicken, BBQ and ranch drizzle.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course">
+      <div class="section-head"><h2>SALADS &amp; TACOS</h2><span class="rule"></span></div>
+      <div class="items">
+        <div class="item">
+          <div class="shot"><img src="images/485788637_1113755863892001_4424692359384456417_n.jpg" alt="Grilled Chicken Salad"></div>
+          <div class="body">
+            <div class="row"><span class="name">Grilled Chicken Salad</span><span class="dots"></span><span class="price">$10</span></div>
+            <span class="desc">Grilled chicken, bacon, cheddar, tomato — the regulars swear by it.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="shot"><img src="images/486026483_1113563993911188_3994245995759634724_n.jpg" alt="Taco Salad"></div>
+          <div class="body">
+            <div class="row"><span class="name">Taco Salad</span><span class="dots"></span><span class="price">$10</span></div>
+            <span class="desc">Seasoned beef, lettuce, cheese, tomato, salsa &amp; sour cream on chips.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="shot"><img src="images/486110694_1113756147225306_2144241593999671896_n.jpg" alt="Chili Cheese Nachos"></div>
+          <div class="body">
+            <div class="row"><span class="name">Chili Cheese Nachos</span><span class="dots"></span><span class="price">$9</span></div>
+            <span class="desc">House chili and queso over tortilla chips.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="note">// prices are placeholders — send the real ones</p>
+</section>
+
+<section class="order">
+  <div class="order-inner">
+    <div>
+      <h3>HUNGRY? CALL IT IN.</h3>
+      <p>In-store pickup · $2 Jell-O shots at the bar</p>
+    </div>
+    <a href="tel:7656623717">(765) 662-3717</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  Big H Sports Bar &amp; Grill · <a href="https://maps.app.goo.gl/W6Pt8QaQuVn1238e7" target="_blank" rel="noopener">3022 S Washington St, Marion IN</a> · <a href="tel:7656623717">(765) 662-3717</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Big H Sports Bar & Grill — shared shell: tokens, nav, footer, buttons */
+
+:root{
+  --bg:#0a0704;
+  --ink:#f3eae0;
+  --muted:#a8907a;
+  --dim:#c4ad97;
+  --sand:#d9c6b2;
+  --orange:#e8813a;
+  --orange-hot:#d96716;
+  --orange-deep:#b34f0a;
+  --orange-lite:#f0a35e;
+  --card:#171009;
+  --line:#2c2014;
+  --rule:#33261a;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);font-family:Barlow,system-ui,sans-serif;color:var(--ink)}
+a{color:var(--orange);text-decoration:none}
+img{max-width:100%}
+h1,h2,h3{text-wrap:balance}
+
+.condensed{font-family:'Barlow Condensed',sans-serif}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:28px;
+  padding:12px 36px;background:rgba(10,7,4,.82);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(217,103,22,.45);
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:46px;border-radius:8px;object-fit:contain;background:#000}
+.brand span{font-family:Graduate,serif;font-size:19px;color:#fff;letter-spacing:1px}
+.brand em{color:var(--orange);font-style:normal}
+.nav-links{
+  display:flex;align-items:center;gap:28px;margin-left:auto;
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:17px;
+  letter-spacing:2px;text-transform:uppercase;
+}
+.nav-links a{color:var(--ink);transition:color .15s ease}
+.nav-links a:hover{color:var(--orange)}
+.nav-links a.active{color:var(--orange);border-bottom:2px solid var(--orange-hot);padding-bottom:2px}
+.nav-links a.active:hover{color:var(--orange-lite)}
+.nav-links a.btn{
+  border:1px solid var(--orange-hot);color:var(--orange);padding:9px 22px;border-radius:6px;
+  box-shadow:0 0 14px rgba(217,103,22,.35), inset 0 0 10px rgba(217,103,22,.15);
+  transition:background .15s ease,color .15s ease;
+}
+.nav-links a.btn:hover{background:var(--orange-hot);color:#fff}
+
+/* ---------- shared bits ---------- */
+.eyebrow{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;
+  letter-spacing:5px;color:var(--orange-lite);text-transform:uppercase;
+}
+.cta-solid{
+  background:var(--orange-hot);color:#fff;padding:16px 36px;border-radius:8px;
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;
+  letter-spacing:2.5px;text-transform:uppercase;box-shadow:0 0 28px rgba(217,103,22,.5);
+  transition:background .15s ease;
+}
+.cta-solid:hover{background:var(--orange-deep);color:#fff}
+.cta-ghost{
+  border:2px solid rgba(232,129,58,.8);color:var(--orange-lite);padding:14px 34px;border-radius:8px;
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;
+  letter-spacing:2.5px;text-transform:uppercase;transition:background .15s ease,color .15s ease;
+}
+.cta-ghost:hover{background:var(--orange-hot);color:#fff}
+.section-head{display:flex;align-items:center;gap:16px}
+.section-head .rule{flex:1;border-bottom:2px solid var(--rule)}
+.note{text-align:center;margin:40px 0 0;font-size:14px;color:#6e594a;font-family:ui-monospace,monospace}
+
+/* ---------- footer ---------- */
+.site-footer{
+  background:#000;border-top:1px solid rgba(217,103,22,.45);color:var(--muted);
+  padding:28px 32px;text-align:center;font-size:14px;
+  font-family:'Barlow Condensed',sans-serif;letter-spacing:2px;text-transform:uppercase;
+}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:var(--orange)}
+
+@media (max-width:860px){
+  .nav{padding:10px 16px;gap:14px;flex-wrap:wrap}
+  .nav-links{gap:16px;font-size:15px;letter-spacing:1px;width:100%;margin-left:0;justify-content:center}
+  .nav-links a.btn{padding:7px 14px}
+  .cta-solid,.cta-ghost{font-size:17px;padding:13px 24px}
+}

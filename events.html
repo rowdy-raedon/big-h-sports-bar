@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events · Big H Sports Bar &amp; Grill · Marion, IN</title>
+<meta name="description" content="What's on every week at Big H Sports Bar &amp; Grill in Marion, Indiana — game day, pool, open mic night, NBA Hoops, cornhole and more.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body{background:#161009}
+  .nav{background:#0e0a06;border-bottom:3px solid var(--orange-hot);backdrop-filter:none}
+
+  .events{background:#161009;padding:64px 32px 72px}
+  .events .wrap{max-width:1040px;margin:0 auto}
+  .events .head{text-align:center;margin-bottom:44px}
+  .events h1{font-family:Graduate,serif;font-size:48px;margin:8px 0 0;color:#fff}
+  .events h1 em{color:var(--orange-hot);font-style:normal}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .card{
+    background:#2f2318;border:1px solid #4a382a;border-radius:12px;overflow:hidden;
+    display:flex;flex-direction:column;transition:border-color .15s ease,transform .15s ease;
+  }
+  .card:hover{border-color:var(--orange-hot);transform:translateY(-2px)}
+  .card .frame{height:150px}
+  .card .frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .card .body{padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+  .card .day{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;
+    letter-spacing:3px;color:var(--orange-hot);text-transform:uppercase;
+  }
+  .card .name{font-family:Graduate,serif;font-size:20px;color:#fff}
+  .card .desc{font-size:15px;color:var(--dim);line-height:1.5}
+
+  .site-footer{background:#0e0a06;color:var(--dim)}
+
+  @media (max-width:860px){
+    .events{padding:44px 16px 56px}
+    .events h1{font-size:34px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="index.html">
+    <img src="images/logo.jpg" alt="Big H Sports Bar logo">
+    <span>BIG H <em>SPORTS BAR</em></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a class="active" href="events.html">Events</a>
+    <a href="index.html#visit">Visit</a>
+    <a class="btn" href="https://www.facebook.com/YeaklesSportsBar" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</nav>
+
+<section class="events">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Every week at Big H</div>
+      <h1>WHAT'S <em>GOING ON</em></h1>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="frame"><img src="images/486046986_1112478054019782_272474303376662000_n.jpg" alt="Game day at Big H"></div>
+        <div class="body">
+          <div class="day">Every Saturday</div>
+          <div class="name">GAME DAY</div>
+          <div class="desc">Every game on every screen, drink specials all day.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="frame"><img src="images/515145939_1191266326140954_7427008436894400890_n.jpg" alt="Pool tables"></div>
+        <div class="body">
+          <div class="day">Weekly</div>
+          <div class="name">POOL</div>
+          <div class="desc">Multiple tables, money games, and league play.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="frame"><img src="images/490358586_1128513182416269_2871892313093338902_n.jpg" alt="Open mic night Best Act trophy"></div>
+        <div class="body">
+          <div class="day">Weekly</div>
+          <div class="name">OPEN MIC NIGHT</div>
+          <div class="desc">Take the stage — Best Act takes home the trophy.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="frame"><img src="images/491839704_1132622315338689_8459426095239501431_n.jpg" alt="NBA Hoops arcade machine"></div>
+        <div class="body">
+          <div class="day">Anytime</div>
+          <div class="name">GAMES GALORE</div>
+          <div class="desc">NBA Hoops, cornhole, beer pong, darts, and more.</div>
+        </div>
+      </div>
+
+    </div>
+    <p class="note">// placeholder lineup — send the real weekly events</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  Big H Sports Bar &amp; Grill · <a href="https://maps.app.goo.gl/W6Pt8QaQuVn1238e7" target="_blank" rel="noopener">3022 S Washington St, Marion IN</a> · <a href="tel:7656623717">(765) 662-3717</a>
+</footer>
+
+</body>
+</html>
